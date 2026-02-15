@@ -11,7 +11,10 @@ from calendar_data import CALENDAR_DATA
 app = Flask(__name__)
 CORS(app)
 
-BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+# Use /tmp for storage in Vercel (Ephemeral)
+# For persistent storage, use a database like Vercel KV, Postgres, or Supabase.
+import tempfile
+BASE_DIR = tempfile.gettempdir()
 PROGRESS_FILE = os.path.join(BASE_DIR, 'progress.json')
 TEST_RESULTS_FILE = os.path.join(BASE_DIR, 'test_results.json')
 CALENDAR_EVENTS_FILE = os.path.join(BASE_DIR, 'calendar_events.json')
