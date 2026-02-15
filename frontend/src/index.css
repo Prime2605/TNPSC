@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Noto+Sans+Tamil:wght@300;400;500;600;700&display=swap');
+
+:root {
+  /* Magical Dark Theme - Purple, Blue, Gold, Pink */
+  --bg-primary: #0a0812;
+  --bg-secondary: #120e1a;
+  --bg-card: rgba(25, 18, 45, 0.95);
+  --bg-glass: rgba(255, 255, 255, 0.04);
+
+  /* Text Colors */
+  --text-primary: #ffffff;
+  --text-secondary: #c4b5fd;
+  --text-muted: #8b7fc7;
+
+  /* Magical Color Palette */
+  --purple: #8b5cf6;
+  --purple-light: #a78bfa;
+  --purple-glow: rgba(139, 92, 246, 0.4);
+
+  --blue: #3b82f6;
+  --blue-light: #60a5fa;
+  --blue-glow: rgba(59, 130, 246, 0.4);
+
+  --gold: #f59e0b;
+  --gold-light: #fbbf24;
+  --gold-neon: #fcd34d;
+  --gold-glow: rgba(245, 158, 11, 0.5);
+
+  --pink: #ec4899;
+  --pink-light: #f472b6;
+  --pink-glow: rgba(236, 72, 153, 0.4);
+
+  /* Accent Colors */
+  --accent-primary: #8b5cf6;
+  --accent-secondary: #f59e0b;
+  --accent-tertiary: #ec4899;
+
+  /* Status Colors */
+  --success: #10b981;
+  --success-glow: rgba(16, 185, 129, 0.3);
+  --warning: #fbbf24;
+  --danger: #ef4444;
+
+  /* Borders & Shadows */
+  --border-color: rgba(139, 92, 246, 0.15);
+  --border-gold: rgba(245, 158, 11, 0.3);
+  --shadow-lg: 0 25px 50px -12px rgba(0, 0, 0, 0.6);
+  --shadow-glow: 0 0 40px rgba(139, 92, 246, 0.2);
+  --shadow-gold: 0 0 30px rgba(245, 158, 11, 0.3);
+  --shadow-pink: 0 0 30px rgba(236, 72, 153, 0.3);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', 'Noto Sans Tamil', sans-serif;
+  background: var(--bg-primary);
+  color: var(--text-primary);
+  min-height: 100vh;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+/* Magical Background with Multiple Gradients */
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background:
+    radial-gradient(ellipse at 0% 0%, rgba(139, 92, 246, 0.2) 0%, transparent 50%),
+    radial-gradient(ellipse at 100% 0%, rgba(236, 72, 153, 0.15) 0%, transparent 50%),
+    radial-gradient(ellipse at 50% 100%, rgba(245, 158, 11, 0.1) 0%, transparent 50%),
+    radial-gradient(ellipse at 100% 100%, rgba(59, 130, 246, 0.15) 0%, transparent 50%);
+  pointer-events: none;
+  z-index: -1;
+  animation: magicBg 8s ease-in-out infinite;
+}
+
+@keyframes magicBg {
+
+  0%,
+  100% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0.8;
+  }
+}
+
+/* Floating Magic Particles Effect */
+body::after {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image:
+    radial-gradient(2px 2px at 20px 30px, var(--gold-neon), transparent),
+    radial-gradient(2px 2px at 40px 70px, var(--pink-light), transparent),
+    radial-gradient(2px 2px at 50px 160px, var(--purple-light), transparent),
+    radial-gradient(2px 2px at 90px 40px, var(--blue-light), transparent),
+    radial-gradient(2px 2px at 130px 80px, var(--gold-neon), transparent),
+    radial-gradient(2px 2px at 160px 120px, var(--pink), transparent);
+  background-repeat: repeat;
+  background-size: 200px 200px;
+  pointer-events: none;
+  z-index: -1;
+  opacity: 0.3;
+  animation: sparkle 4s ease-in-out infinite;
+}
+
+@keyframes sparkle {
+
+  0%,
+  100% {
+    opacity: 0.3;
+  }
+
+  50% {
+    opacity: 0.5;
+  }
+}
+
+#root {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 16px;
+}
+
+/* Mobile Optimized (6.65 inch screen) */
+@media (max-width: 430px) {
+  #root {
+    padding: 12px;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-secondary);
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, var(--purple), var(--pink));
+  border-radius: 3px;
+}
+
+.tamil {
+  font-family: 'Noto Sans Tamil', sans-serif;
+}
+
+/* Neon Glow Utility Classes */
+.glow-purple {
+  box-shadow: 0 0 20px var(--purple-glow);
+}
+
+.glow-gold {
+  box-shadow: 0 0 20px var(--gold-glow);
+}
+
+.glow-pink {
+  box-shadow: 0 0 20px var(--pink-glow);
+}
+
+.glow-blue {
+  box-shadow: 0 0 20px var(--blue-glow);
+}
+
+/* Gradient Text */
+.gradient-text-magic {
+  background: linear-gradient(135deg, var(--purple), var(--gold), var(--pink));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
