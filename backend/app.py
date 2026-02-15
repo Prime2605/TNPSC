@@ -23,7 +23,9 @@ def load_progress():
     if os.path.exists(PROGRESS_FILE):
         try:
             with open(PROGRESS_FILE, 'r', encoding='utf-8') as f:
-            return json.load(f)
+                return json.load(f)
+        except Exception:
+            return {}
     return {}
 
 def save_progress(data):
