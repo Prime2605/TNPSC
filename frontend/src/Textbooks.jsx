@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react'
 import './Textbooks.css'
 
-const API_URL = '/api'
+const API_URL = import.meta.env.VITE_API_URL || '/api'
 
 function Textbooks({ onBack }) {
     const [textbooks, setTextbooks] = useState(null)
