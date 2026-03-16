@@ -5,7 +5,6 @@ import Textbooks from './Textbooks'
 import Newspapers from './Newspapers'
 import StudyPlanner from './StudyPlanner'
 import Background3D from './components/Background3D'
-import JellyMenu from './components/JellyMenu'
 
 const API_URL = import.meta.env.VITE_API_URL || '/api'
 
@@ -254,7 +253,6 @@ ${'═'.repeat(68)}
   return (
     <div className="app-container">
       <Background3D />
-      <JellyMenu />
       
       {/* SVG Definitions */}
       <svg width="0" height="0">
