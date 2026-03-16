@@ -105,5 +105,18 @@ TEXTBOOKS_DATA = {
     "note": {
         "ta": "குறிப்பு: TNPSC Group 4 தேர்வுக்கு 6 முதல் 10ஆம் வகுப்பு வரையிலான பாடநூல்கள் மிக முக்கியம். குறிப்பாக 10ஆம் வகுப்பு (SSLC) பாடநூல்களை முழுமையாக படிக்கவும்.",
         "en": "Note: For TNPSC Group 4 exam, textbooks from 6th to 10th standard are very important. Especially read 10th standard (SSLC) textbooks thoroughly."
-    }
+    },
+    "studyMaterials": [
+        {
+            "id": "pavithran-tnpsc",
+            "name": "TNPSC Study Materials",
+            "nameTa": "TNPSC படிப்புப் பொருட்கள்",
+            "url": "https://www.pavithran.net/tnpsc-study-materials/",
+            "icon": "📚",
+            "color": "#7c3aed",
+            "description": "Comprehensive TNPSC study materials by Pavithran - Notes, Previous Year Papers & More",
+            "descriptionTa": "பவித்ரன் வழங்கும் விரிவான TNPSC படிப்புப் பொருட்கள் - குறிப்புகள், முந்தைய ஆண்டு வினாத்தாள்கள் & மேலும்",
+            "recommended": True
+        }
+    ]
 }
