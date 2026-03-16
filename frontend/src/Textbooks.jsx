@@ -123,6 +123,42 @@ function Textbooks({ onBack }) {
                 </div>
             )}
 
+            {/* Study Materials Section */}
+            {textbooks.studyMaterials && textbooks.studyMaterials.length > 0 && (
+                <div className="study-materials-section">
+                    <h3 className="section-title">
+                        <span className="class-badge">✨</span>
+                        TNPSC படிப்புப் பொருட்கள் / Study Materials
+                    </h3>
+                    <div className="materials-grid">
+                        {textbooks.studyMaterials.map(material => (
+                            <a
+                                key={material.id}
+                                href={material.url}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="material-card"
+                                style={{ borderLeftColor: material.color }}
+                            >
+                                <div className="material-icon" style={{ backgroundColor: `${material.color}20`, color: material.color }}>
+                                    {material.icon}
+                                </div>
+                                <div className="material-info">
+                                    <h4>{material.nameTa}</h4>
+                                    <h5>{material.name}</h5>
+                                    <p>{material.description}</p>
+                                </div>
+                                {material.recommended && (
+                                    <div className="recommended-badge" style={{ backgroundColor: material.color }}>
+                                        ★ Recommended
+                                    </div>
+                                )}
+                            </a>
+                        ))}
+                    </div>
+                </div>
+            )}
+
             {/* Official Source Link */}
             <div className="source-info">
                 <p>All textbooks available at / அனைத்து பாடநூல்களும் இங்கே:</p>
