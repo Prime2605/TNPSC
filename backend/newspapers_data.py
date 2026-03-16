@@ -34,6 +34,26 @@ NEWSPAPERS_DATA = {
                     "color": "#dc2626",
                     "description": "India's Largest English Daily",
                     "descriptionTa": "இந்தியாவின் மிகப்பெரிய ஆங்கில தினசரி"
+                },
+                {
+                    "id": "hindu_epaper",
+                    "name": "The Hindu E-Paper",
+                    "nameTa": "தி இந்து மின்-செய்தித்தாள்",
+                    "url": "https://epaper.thehindu.com/reader",
+                    "icon": "🗞️",
+                    "color": "#1e3a5f",
+                    "description": "The Hindu Digital E-Paper Edition",
+                    "descriptionTa": "தி இந்து டிஜிட்டல் மின்-செய்தித்தாள் பதிப்பு"
+                },
+                {
+                    "id": "toi_epaper",
+                    "name": "Times of India E-Paper",
+                    "nameTa": "டைம்ஸ் ஆஃப் இந்தியா மின்-செய்தித்தாள்",
+                    "url": "https://epaper.indiatimes.com/timesepaper/publication-the-times-of-india,city-delhi.cms",
+                    "icon": "🗞️",
+                    "color": "#b91c1c",
+                    "description": "Times of India Digital E-Paper Edition",
+                    "descriptionTa": "டைம்ஸ் ஆஃப் இந்தியா டிஜிட்டல் மின்-செய்தித்தாள் பதிப்பு"
                 }
             ]
         },
@@ -73,6 +93,47 @@ NEWSPAPERS_DATA = {
                     "description": "Most Circulated Tamil Daily",
                     "descriptionTa": "அதிக விற்பனையான தமிழ் தினசரி",
                     "recommended": True
+                },
+                {
+                    "id": "maalaimalar",
+                    "name": "Maalaimalar",
+                    "nameTa": "மாலை மலர்",
+                    "url": "https://www.maalaimalar.com/",
+                    "icon": "📰",
+                    "color": "#7c3aed",
+                    "description": "Popular Tamil Evening Daily",
+                    "descriptionTa": "பிரபலமான தமிழ் மாலை தினசரி"
+                },
+                {
+                    "id": "dinamalar",
+                    "name": "Dinamalar",
+                    "nameTa": "தினமலர்",
+                    "url": "https://www.dinamalar.com/",
+                    "icon": "📰",
+                    "color": "#0284c7",
+                    "description": "Leading Tamil Daily with wide readership",
+                    "descriptionTa": "பரந்த வாசகர்களைக் கொண்ட முன்னணி தமிழ் தினசரி",
+                    "recommended": True
+                },
+                {
+                    "id": "puthiyathalaimurai",
+                    "name": "Puthiya Thalaimurai",
+                    "nameTa": "புதிய தலைமுறை",
+                    "url": "https://www.puthiyathalaimurai.com/",
+                    "icon": "📺",
+                    "color": "#e11d48",
+                    "description": "Tamil News Channel & Portal",
+                    "descriptionTa": "தமிழ் செய்தி சேனல் & இணையதளம்"
+                },
+                {
+                    "id": "vikatan",
+                    "name": "Vikatan",
+                    "nameTa": "விகடன்",
+                    "url": "https://www.vikatan.com/news",
+                    "icon": "📰",
+                    "color": "#d97706",
+                    "description": "Vikatan Group - Tamil News & Magazine",
+                    "descriptionTa": "விகடன் குழுமம் - தமிழ் செய்தி & இதழ்"
                 }
             ]
         },
@@ -81,6 +142,17 @@ NEWSPAPERS_DATA = {
             "name": "International News",
             "nameTa": "சர்வதேச செய்திகள்",
             "papers": [
+                {
+                    "id": "ndtv",
+                    "name": "NDTV",
+                    "nameTa": "என்டிடிவி",
+                    "url": "https://www.ndtv.com/",
+                    "icon": "📺",
+                    "color": "#dc2626",
+                    "description": "New Delhi Television - Comprehensive Indian & World News",
+                    "descriptionTa": "நியூ டெல்லி டெலிவிஷன் - விரிவான இந்திய & உலக செய்திகள்",
+                    "recommended": True
+                },
                 {
                     "id": "abc",
                     "name": "ABC News",
